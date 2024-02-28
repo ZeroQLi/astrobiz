@@ -6,10 +6,16 @@ const images = ["/ss.png","/office.png","factory.jpg"]
 
 const css = `
     .main {
+        @media only screen and (max-width: 499px) {
+            background-color: url(./potrait.jpeg);
+        }
+
         background-image: url(./building.jpg);
         background-size: 100% 100%;
         height:90vh;
         width:100%;
+
+        
     }
 `
 

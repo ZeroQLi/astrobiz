@@ -8,8 +8,8 @@ const Brands = () => {
   return (
     <div className="flex flex-col ">
       <span className=" items-center ">
-        <h3 className="py-4 text-center text-2xl text-red-700">What we provide</h3>
-        <h1 className='text-center font-bold py-10 p-0 text-7xl'>Our Brands</h1>
+        {/* <h3 className="txt-1xl lg:text-2xl py-2 lg:py-4 text-center text-red-700">What we provide</h3> */}
+        <h1 className='text-3xl lg:text-7xl text-center font-bold py-5 lg:py-10 p-0 '>Our Brands</h1>
       </span>
 
       <Carousel
