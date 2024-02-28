@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.friendlyuser.github.io',
-  base: "/astrobiz",
+  base: "/",
   integrations: [tailwind(), react()]
 });

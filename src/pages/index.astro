@@ -1,32 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Prod from '../components/Prods.astro';
 import OtherFeatures from '../components/OtherFeatures';
-import MainFeatures from  '../components/MainFeatures';
-import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Brands from "../components/Brands";
+import Aim from "../components/Aim";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Millasky trading">
 	<main>
 		<Navbar />
+
 		<div id="hero" />
 		<Hero />
+
 		<div id="features" />
 		<OtherFeatures client:load/>
-		<MainFeatures client:load/>
-		<div id="pricing" />
-		<Pricing client:load />
+
+		<div id="products" />
+		<Prod />
+
+		<div id="aim">
+		<Aim />
+
+		<div id="brands" />
+		<Brands client:load/>
+
 		<div id="contact" />
 		<Contact client:load />
+		
 		<Footer client:load />
+		
 	</main>
 </Layout>
 
 <style>
+	#hero {
+		height: 100%;
+		width: 100%;
+		background-color: black;
+	}
+
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
