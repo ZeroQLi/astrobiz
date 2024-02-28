@@ -6,7 +6,9 @@ const Contact = () => {
   <div className="container px-5 py-24 mx-auto">
   <div className="flex flex-col text-center w-full mb-20">
   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-  <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, metus nec faucibus rhoncus, nunc enim sodales nisl, vel lobortis nisl metus vel nulla.</p>
+  <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+    Contact us via the form below.
+  </p>
   </div>
 
   <form

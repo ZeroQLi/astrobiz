@@ -8,17 +8,24 @@ import Aim from "../components/Aim";
 import Brands from "../components/Brands";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
 ---
 
 <Layout title="Millasky trading">
 	<main>
+		<div>
+    <img class="p-2 lg:hidden" src="./logo.png"></img>
+ 		</div>
+
 		<div id="nav"/>
 		<Navbar client:only="react"/>
 
-		<div id="hero" class="" />
+		<div id="hero" class="max-sm:hidden " />
 		<Hero client:only="react" />
 		</div>
+
+		<!-- <div id="hero" class=" min-sm:hidden" />
+		<Hero client:only="react" />
+		</div> -->
 
 		<div id="features" />
 		<OtherFeatures client:only="react"/>
