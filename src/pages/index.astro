@@ -15,8 +15,9 @@ import Footer from "../components/Footer";
 	<main>
 		<Navbar client:only="react"/>
 
-		<div id="hero" />
+		<div id="hero" class="sm:hidden" />
 		<Hero client:only="react" />
+		</div>
 
 		<div id="features" />
 		<OtherFeatures client:only="react"/>
