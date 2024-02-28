@@ -2,32 +2,33 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import Prod from '../components/Prods.astro';
 import OtherFeatures from '../components/OtherFeatures';
+import Products from '../components/Products.astro';
+import Aim from "../components/Aim";
+import Brands from "../components/Brands";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Brands from "../components/Brands";
-import Aim from "../components/Aim";
+
 ---
 
 <Layout title="Millasky trading">
 	<main>
-		<Navbar />
+		<Navbar client:only="react"/>
 
 		<div id="hero" />
-		<Hero />
+		<Hero client:only="react" />
 
 		<div id="features" />
-		<OtherFeatures client:load/>
+		<OtherFeatures client:only="react"/>
 
 		<div id="products" />
-		<Prod />
+		<Products />
 
 		<div id="aim">
-		<Aim />
+		<Aim client:only="react"/>
 
 		<div id="brands" />
-		<Brands client:load/>
+		<Brands client:only="react"/>
 
 		<div id="contact" />
 		<Contact client:load />
