@@ -15,8 +15,6 @@ const Contact = () => {
   method="POST"
   data-netlify="true"
   className="lg:w-1/2 md:w-2/3 mx-auto">
-
-  // WEB3FORM ACCESS KEY
   <input type="hidden" name="access_key" value="ca5e1658-29b1-41cc-b389-e3a6e9066fcb" />
          
   <input type="hidden" name="form-name" value="contact" />
