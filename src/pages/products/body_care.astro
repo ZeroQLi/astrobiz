@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Product_layout.astro";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Card from "../../components/products/Card.astro";
+---
+
+<Layout title="Home care">
+  <div id="nav"></div>
+  <Navbar client:only="react" />
+  <main class="">
+    <h1 class="text-center m-5 text-5xl">Hand wash</h1>
+    <div class="p-3 lg:p-20">
+      <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
+        
+    </div>
+
+    <h1 class="text-center m-5 text-5xl">Disinfectants</h1>
+    <div class="p-3 lg:p-20">
+      <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
+      </section>
+    </div>
+  </main>
+
+  <Footer client:load />
+</Layout>
