@@ -3,13 +3,13 @@ export interface Props {
 	title: string;
 }
 
-import '@fontsource/roboto-slab';
+import "@fontsource/roboto-slab";
 const { title } = Astro.props;
 
 import { SEO } from "astro-seo";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -18,25 +18,40 @@ import { SEO } from "astro-seo";
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<SEO
-      title="Millasky General Trading"
-      description="Official website of Millasky general trading. Ajman, UAE."
-    />
+			title="Millasky General Trading"
+			description="Official website of Millasky general trading. Ajman, UAE."
+		/>
+	<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
 	<body>
 		<slot />
-	</body>
+	</body><style is:global>
+		:root {
+			--accent: 124, 58, 237;
+			--accent-gradient: linear-gradient(
+				45deg,
+				rgb(var(--accent)),
+				#da62c4 30%,
+				white 60%
+			);
+		}
+		html {
+			font-family:
+				Roboto Slab,
+				system-ui,
+				sans-serif;
+			background-color: #f6f6f6;
+		}
+		code {
+			font-family:
+				Menlo,
+				Monaco,
+				Lucida Console,
+				Liberation Mono,
+				DejaVu Sans Mono,
+				Bitstream Vera Sans Mono,
+				Courier New,
+				monospace;
+		}
+	</style>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: Roboto Slab ,system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
