@@ -1,1 +1,39 @@
-tbd
+---
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About us | millasky general trading">
+  <Navbar />
+
+  <main>
+    <h1 class="text-center text-3xl m-5 text-red-700">Overview</h1>
+    <div class="lg:flex lg:h-80 p-3">
+      <p class="text-center p-3 lg:text-2xl">
+        Millasky General Trading FZC - a general trading company, based in
+        Ajman, United Arab Emirates since 2003. <!-- Our Head Office is located in Office Building
+      2840-402, Al Ttay Area, Al Khawaneej, Dubai, UAE -->.
+        We deal in the wholesale distribution of Household products, Cleaning
+        Supplies, and Personal Care products. We distribute all our products to
+        more than 1000 retail outlets across the UAE – namely Hypermarkets,
+        Coops, Supermarkets, Petrol Stations, Gyms, Schools and Groceries.
+      </p>
+      <img class="" src="/ajman-freezone.jpg" />
+    </div>
+
+    <h1 class="text-center text-3xl p-2 text-red-700">Our Mission</h1>
+    <div class="lg:h-80 m-8 lg:text-2xl">
+      <li>
+        To create sustainable and profitable growth, Adding long-term value for:
+        Our Business Partners, Our Customers, Our employees and Our Consumers.
+      </li>
+      <li>
+        Provide our consumers with the best Brands – taking into consideration
+        the healthy, nutritious and organic products.
+      </li>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
