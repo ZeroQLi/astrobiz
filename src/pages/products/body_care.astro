@@ -3,25 +3,46 @@ import Layout from "../../layouts/Product_layout.astro";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Card from "../../components/products/Card.astro";
+import Categories from "../../components/Categories.astro";
 ---
 
-<Layout title="Home care" Name="Home care | millasky general trading" Desc="All body care products sold by millasky genera trading.">
+<Layout
+  title="Body care"
+  Name="Body care | millasky general trading"
+  Desc="All body care products sold by millasky genera trading"
+>
   <div id="nav"></div>
   <Navbar client:only="react" />
-  
+
   <main class="">
-    <h1 class="text-center m-5 text-5xl">Hand wash</h1>
+    <h1 class="text-center m-5 text-5xl">Soap & Hand wash</h1>
     <div class="p-3 lg:p-20">
       <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
+
+        <Card image="/items/body_care/dettol_pink.jpg" title="Dettol Skincare Soap" quantity="165gm x 45pcs" />
         
-    </div>
 
-    <h1 class="text-center m-5 text-5xl">Disinfectants</h1>
-    <div class="p-3 lg:p-20">
-      <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
       </section>
-    </div>
-  </main>
 
-  <Footer client:load />
+      <h1 class="text-center m-5 text-5xl">Shampoo & conditioner</h1>
+      <div class="p-3 lg:p-20">
+        <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
+          <Card image="/items/body_care/himalaya_shampoo.jpg" title="Himalaya Anti-Dandruff Shampoo" quantity="400ml x 4pcs" />
+
+          <Card image="/items/body_care/himalaya_herbal.jpg" title="Himalaya Herbals Argan Oil Shampoo" quantity="400ml x 4pcs" />
+
+          <Card image="/items/body_care/dove_shampoo.jpg" title="Dove Nutritive Solutions Oil Care Shampoo" quantity="400ml x 4pcs"/>
+
+          <Card image="/items/body_care/pantene.jpg" title="Pantene Pro V Anti Hair Fall Shampoo" quantity="400ml x 24pcs"/>
+
+          <Card image="/items/body_care/h&d_shampoo.jpg" title="Head & Shoulders Classic Clean Shampoo" quantity="190ml x 8pcs"/>
+          
+        </section>
+      </div>
+
+      <h1 class="text-center m-5 text-5xl"></h1>
+    </div>
+
+    <Footer client:load />
+  </main>
 </Layout>
