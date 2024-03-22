@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Product_layout.astro";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Card from "../../components/products/Card.astro";
+---
+
+<Layout
+  title="Personal care"
+  Name="Personal care | millasky general trading"
+  Desc="All Personal care products sold by millasky genera trading"
+>
+
+  <div id="nav"></div>
+  <Navbar client:only="react" />
+
+  <main class="">
+    <h1 class="text-center m-5 text-5xl">Hand wash</h1>
+    <div class="p-3 lg:p-20">
+      <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
+        <Card image="/items/personal_care/lux_velvet.jpg" title="Lux Velvet Touch Hand Wash" quantity="500ml x 12pcs"/>
+
+        <Card image="/items/personal_care/dettol_yellowjpg" title="Dettol Anti-Bacterial Hand Wash" quantity="200ml x 4pcs"/>
+      </section>
+    </div>
+
+      <h1 class="text-center m-5 text-5xl">Toothpaste</h1>
+      <div class="p-3 lg:p-20">
+        <section class="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-8">
+
+        <Card image="/items/personal_care/colgate.jpg" title="Colgate Toohtpaste Max Cavity" quantity="100ml x 12pcs"/>
+
+        <Card image="/items/personal_care/signal.jpg" title="Signal Toothpaste Cavity Fighter" quantity="100ml x12pcs"/>
+
+        <Card image="/items/personal_care/himalaya.jpg" title="Himalaya Mint Herbal Toothpaste" quantity="100ml x 24pcs"/>
+
+        <Card image="/items/personal_care/sensodyne.jpg"title="Sensodyne Toothpaste Flouride" quantity="75ml x 4pcs"/>
+        </section>
+      </div>
+    </div>
+
+    <Footer client:load />
+  </main>
+</Layout>
