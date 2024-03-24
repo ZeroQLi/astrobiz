@@ -14,19 +14,19 @@ const OtherFeatures = () => {
                     <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Best Quality</h2>
                     <p className="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, metus nec faucibus rhoncus, nunc enim sodales nisl, vel lobortis nisl metus vel nulla.
+                                 Our commitment to excellence begins with the products we offer. We tirelessly source the finest products from trusted suppliers and producers. Ensuring every item in our inventory meets our high standards.
                     </p>
                     </div>
                 </div>
                 <div className="sm:w-1/3 text-center sm:py-8">
                     <div className="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 mb-5 flex-shrink-0">
-                <img src="/icons/price-tag.png" />
+                    <img src="/icons/price-tag.png" />
                     </div>
                     
                     <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Reasonable Price</h2>
                     <p className="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, metus nec faucibus rhoncus, nunc enim sodales nisl, vel lobortis nisl metus vel nulla.
+                    Our commitment to excellence begins with the products we offer. We tirelessly source the finest products from trusted suppliers and producers. Ensuring every item in our inventory meets our high standards.
                     </p>
                     </div>
                 </div>
