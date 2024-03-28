@@ -17,7 +17,7 @@ const Contact = () => {
   method="POST"
   data-netlify="true"
   className="lg:w-1/2 md:w-2/3 mx-auto">
-  <input type="hidden" name="access_key" value="ca5e1658-29b1-41cc-b389-e3a6e9066fcb" />
+         <input type="hidden" name="access_key" value="306b2597-a954-4c6c-a392-52fb5b4aff57" />
          
   <input type="hidden" name="form-name" value="contact" />
   <div className="flex flex-wrap -m-2">
