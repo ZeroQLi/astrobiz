@@ -2,13 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import OtherFeatures from '../components/OtherFeatures';
+import OtherFeatures from '../components/Vision';
 import Categories from '../components/Categories.astro';
 import Aim from "../components/Aim";
 import Brands from "../components/Brands";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Vision from "../components/Vision";
+import Slideshow from "../components/Slideshow";
 ---
 
 <Layout title="Millasky trading">
@@ -20,6 +21,9 @@ import Vision from "../components/Vision";
 		<div id="nav"/>
 		<Navbar client:only="react"/>
 
+		<div id="slideshow">
+		<Slideshow client:only="react"/>
+
 		<div id="hero" class="max-sm:hidden " />
 		<Hero client:only="react" />
 		</div>
@@ -29,7 +33,7 @@ import Vision from "../components/Vision";
 		</div> -->
 
 		<div id="features" />
-		<OtherFeatures client:only="react"/>
+		<Vision client:only="react"/>
 
 		<div id="products" />
 		<Categories />
@@ -49,11 +53,11 @@ import Vision from "../components/Vision";
 </Layout>
 
 <style>
-	#hero {
+	/* #hero {
 		height: 100%;
 		width: 100%;
 		background-color: black;
-	}
+	} */
 
 	h1 {
 		font-size: 3rem;
@@ -93,4 +97,3 @@ import Vision from "../components/Vision";
 		padding: 0;
 	}
 </style>
-../components/Vision
