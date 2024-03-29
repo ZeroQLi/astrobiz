@@ -26,7 +26,7 @@ const OtherFeatures = () => {
                     <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Reasonable Price</h2>
                     <p className="leading-relaxed text-base">
-    Our commitment to excellence begins with the products we offer. We tirelessly source the finest products from trusted suppliers and producers. Ensuring every item in our inventory meets our high standards.
+    By redefining the notion of value, we empower individuals and families to nourish themselves with the finest products without breaking the bank
                     </p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const OtherFeatures = () => {
                     <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Fast Delivery</h2>
                     <p className="leading-relaxed text-base">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, metus nec faucibus rhoncus, nunc enim sodales nisl, vel lobortis nisl metus vel nulla.
+            We provide swift and reliable service, ensuring our customers receive their orders promptly and efficiently, whenever and wherever they need them.
                     </p>
                     </div>
                 </div>

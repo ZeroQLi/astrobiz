@@ -1,5 +1,5 @@
 import React from 'react';
-import Slideshow from './Slideshow';
+import Slideshow from './Slideshow_old';
 
 const images = ["/ss.png","/office.png","factory.jpg"]
 
